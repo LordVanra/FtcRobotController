@@ -6,18 +6,27 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.core.Bot;
 
-@TeleOp(name = "insert name here")
+/**
+* This is what will run when you initiate and press play on the phone/driver hub.
+* */
+
+@TeleOp(name = "insert name here") // the name is what shows up on your phone/driver hub
 public class TeleOpMode extends LinearOpMode {
 
     @Override
     public void runOpMode() throws InterruptedException {
+        // Code here will run *BEFORE* you press play
+
         Bot.init(hardwareMap);
         GamepadEx driverOp = new GamepadEx(gamepad1); // driver
 
         waitForStart();
 
+        // Code below here will run *AFTER* you press play
+
         while (opModeIsActive()) {
-            //code goes here
+            // Code in here will be run over and over again until you press stop
+            //TODO: program robot controls
         }
     }
 }
