@@ -8,10 +8,10 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 * */
 
 public class Bot {
-    //TODO: List the components the robot needs here
+    //TODO: list the components the robot needs here
 
     public static void init(HardwareMap hardwareMap) {
-        //TODO: Assign values to and initialize components here so they exist when robot is
+        //TODO: assign values to and initialize components here so they exist when robot is
         // initialized
 
     }

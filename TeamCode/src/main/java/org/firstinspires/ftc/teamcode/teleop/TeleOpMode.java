@@ -15,17 +15,17 @@ public class TeleOpMode extends LinearOpMode {
 
     @Override
     public void runOpMode() throws InterruptedException {
-        // Code here will run *BEFORE* you press play
+        // code here will run *BEFORE* you press play
 
         Bot.init(hardwareMap);
         GamepadEx driverOp = new GamepadEx(gamepad1); // driver
 
         waitForStart();
 
-        // Code below here will run *AFTER* you press play
+        // code below here will run *AFTER* you press play
 
         while (opModeIsActive()) {
-            // Code in here will be run over and over again until you press stop
+            // code in here will be run over and over again until you press stop
             //TODO: program robot controls
         }
     }
