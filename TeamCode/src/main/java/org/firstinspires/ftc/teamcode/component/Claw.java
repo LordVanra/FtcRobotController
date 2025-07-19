@@ -7,8 +7,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
  */
 
 public class Claw {
-    //TODO: list components of the claw (what makes the claw work/move?) and important values (e.g.
-    // positions)
+    //TODO: list components of the claw (servos, motors)
     
     public void init(HardwareMap hardwareMap){
         //TODO: use hardwareMap to tell the robot which ports the components are plugged into

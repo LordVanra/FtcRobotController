@@ -27,11 +27,7 @@ public class FindServoPosition extends LinearOpMode {
         while (opModeIsActive()) {
 
             // adjust positions with gamepad; remember that servo position are only from 0 to 1
-            if (gamepad1.a) {
-                position += 0.0001;
-            } else if (gamepad1.b) {
-                position -= 0.0001;
-            }
+            position = gamepad1.left_stick_x;
 
             servo.setPosition(position); // move servo to new position
 
