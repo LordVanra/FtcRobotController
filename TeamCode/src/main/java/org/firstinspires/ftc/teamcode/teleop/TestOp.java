@@ -35,7 +35,8 @@ public class TestOp extends LinearOpMode {
             armController.setPID(P, I, D);
 
             //Calculate error
-            error = targetPos+leftSlides.getCurrentPosition();
+            //Switch negative sign to positive if motor is reversed
+            error = targetPos-leftSlides.getCurrentPosition();
 
             //Use PID system to calculate power
             leftSlides.setPower( Range.clip(armController.calculate(0, error), -1, 1));
